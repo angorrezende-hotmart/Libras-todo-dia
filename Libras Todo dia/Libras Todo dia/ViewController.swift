@@ -11,9 +11,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+       
+        let imageView = UIImageView(image: UIImage(named: "Alfabeto")!)
+        view.addSubview(imageView)
+
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+
+            let trailingAnchor = imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            let topAnchor = imageView.topAnchor.constraint(equalTo: view.topAnchor)
+            let leadingAnchor = imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+            let widthAnchor = imageView.widthAnchor.constraint(equalToConstant: 430)
+            let heightAnchor = imageView.heightAnchor.constraint(equalToConstant: 900)
+            let topAnchor = imageView.topAnchor.constraint(equalToConstant: 100)
+            NSLayoutConstraint.activate([trailingAnchor,topAnchor, leadingAnchor, widthAnchor, heightAnchor,topAnchor])
+        
     }
 
 
 }
-
