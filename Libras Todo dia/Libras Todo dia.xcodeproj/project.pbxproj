@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5116F3CA28C13312005A4CA0 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116F3C928C13312005A4CA0 /* View.swift */; };
+		5116F3CD28C13859005A4CA0 /* LibrasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116F3CC28C13859005A4CA0 /* LibrasModel.swift */; };
+		5116F3CF28C141BD005A4CA0 /* LetterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116F3CE28C141BD005A4CA0 /* LetterTableViewCell.swift */; };
 		51A17BB028B6BDA5008BBE43 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A17BAF28B6BDA5008BBE43 /* UIView+Autolayout.swift */; };
 		99B3127228B6A219000396DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3127128B6A219000396DC /* AppDelegate.swift */; };
 		99B3127428B6A219000396DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3127328B6A219000396DC /* SceneDelegate.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5116F3C928C13312005A4CA0 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		5116F3CC28C13859005A4CA0 /* LibrasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrasModel.swift; sourceTree = "<group>"; };
+		5116F3CE28C141BD005A4CA0 /* LetterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterTableViewCell.swift; sourceTree = "<group>"; };
 		51A17BAF28B6BDA5008BBE43 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
 		99B3126E28B6A219000396DC /* Libras Todo dia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Libras Todo dia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B3127128B6A219000396DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5116F3C828C132AD005A4CA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5116F3C928C13312005A4CA0 /* View.swift */,
+				5116F3CE28C141BD005A4CA0 /* LetterTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5116F3CB28C13833005A4CA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5116F3CC28C13859005A4CA0 /* LibrasModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		51A17BAE28B6BD7D008BBE43 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,10 +132,12 @@
 		99B3127028B6A219000396DC /* Libras Todo dia */ = {
 			isa = PBXGroup;
 			children = (
+				5116F3CB28C13833005A4CA0 /* Model */,
 				51A17BAE28B6BD7D008BBE43 /* Helper */,
 				99B3127128B6A219000396DC /* AppDelegate.swift */,
 				99B3127328B6A219000396DC /* SceneDelegate.swift */,
 				99B3127528B6A219000396DC /* ViewController.swift */,
+				5116F3C828C132AD005A4CA0 /* View */,
 				99B3127728B6A219000396DC /* Main.storyboard */,
 				99B3127A28B6A21C000396DC /* Assets.xcassets */,
 				99B3127C28B6A21C000396DC /* LaunchScreen.storyboard */,
@@ -271,8 +296,11 @@
 			files = (
 				99B3127628B6A219000396DC /* ViewController.swift in Sources */,
 				51A17BB028B6BDA5008BBE43 /* UIView+Autolayout.swift in Sources */,
+				5116F3CD28C13859005A4CA0 /* LibrasModel.swift in Sources */,
+				5116F3CA28C13312005A4CA0 /* View.swift in Sources */,
 				99B3127228B6A219000396DC /* AppDelegate.swift in Sources */,
 				99B3127428B6A219000396DC /* SceneDelegate.swift in Sources */,
+				5116F3CF28C141BD005A4CA0 /* LetterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
