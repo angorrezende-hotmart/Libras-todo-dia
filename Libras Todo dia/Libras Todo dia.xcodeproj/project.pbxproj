@@ -16,6 +16,9 @@
 		99B3128928B6A21C000396DC /* Libras_Todo_diaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3128828B6A21C000396DC /* Libras_Todo_diaTests.swift */; };
 		99B3129328B6A21C000396DC /* Libras_Todo_diaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3129228B6A21C000396DC /* Libras_Todo_diaUITests.swift */; };
 		99B3129528B6A21C000396DC /* Libras_Todo_diaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3129428B6A21C000396DC /* Libras_Todo_diaUITestsLaunchTests.swift */; };
+		99E92F3128C22B8C00DC6003 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E92F3028C22B8C00DC6003 /* View.swift */; };
+		99E92F3428C234E300DC6003 /* LibrasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E92F3328C234E300DC6003 /* LibrasModel.swift */; };
+		99E92F3628C246A500DC6003 /* LetterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E92F3528C246A500DC6003 /* LetterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		99B3128E28B6A21C000396DC /* Libras Todo diaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Libras Todo diaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B3129228B6A21C000396DC /* Libras_Todo_diaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libras_Todo_diaUITests.swift; sourceTree = "<group>"; };
 		99B3129428B6A21C000396DC /* Libras_Todo_diaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libras_Todo_diaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99E92F3028C22B8C00DC6003 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		99E92F3328C234E300DC6003 /* LibrasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrasModel.swift; sourceTree = "<group>"; };
+		99E92F3528C246A500DC6003 /* LetterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		99B3127028B6A219000396DC /* Libras Todo dia */ = {
 			isa = PBXGroup;
 			children = (
+				99E92F3228C2349400DC6003 /* Model */,
 				99B3127128B6A219000396DC /* AppDelegate.swift */,
 				99B3127328B6A219000396DC /* SceneDelegate.swift */,
 				99B3127528B6A219000396DC /* ViewController.swift */,
+				99E92F2F28C22B5600DC6003 /* View */,
 				99B3127728B6A219000396DC /* Main.storyboard */,
 				99B3127A28B6A21C000396DC /* Assets.xcassets */,
 				99B3127C28B6A21C000396DC /* LaunchScreen.storyboard */,
@@ -125,6 +133,23 @@
 				99B3129428B6A21C000396DC /* Libras_Todo_diaUITestsLaunchTests.swift */,
 			);
 			path = "Libras Todo diaUITests";
+			sourceTree = "<group>";
+		};
+		99E92F2F28C22B5600DC6003 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99E92F3028C22B8C00DC6003 /* View.swift */,
+				99E92F3528C246A500DC6003 /* LetterTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99E92F3228C2349400DC6003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99E92F3328C234E300DC6003 /* LibrasModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E92F3428C234E300DC6003 /* LibrasModel.swift in Sources */,
+				99E92F3128C22B8C00DC6003 /* View.swift in Sources */,
 				99B3127628B6A219000396DC /* ViewController.swift in Sources */,
+				99E92F3628C246A500DC6003 /* LetterTableViewCell.swift in Sources */,
 				99B3127228B6A219000396DC /* AppDelegate.swift in Sources */,
 				99B3127428B6A219000396DC /* SceneDelegate.swift in Sources */,
 			);
