@@ -47,20 +47,24 @@ final class LetterTableViewCell: UITableViewCell {
     // Text esquerda mas maximo na letra
     private func constrainTitleLabel() {
         titleLabel.anchor(
-            top: topAnchor,
             leading: leadingAnchor,
             trailing: letterImageView.leadingAnchor,
+            leadingConstant: 16,
             heightConstant: 24.0
         )
+        
+        titleLabel.anchorCenterYToSuperview()
     }
     // Imagem a direita
     private func constrainLetterImageView() {
         letterImageView.anchor(
-            top:topAnchor,
-            bottom: bottomAnchor,
+            top: topAnchor,
             trailing: trailingAnchor,
+            trailingConstant: 16,
             widthConstant: 40,
             heightConstant: 40
         )
+        
+        letterImageView.anchorCenterYToSuperview()
     }
 }

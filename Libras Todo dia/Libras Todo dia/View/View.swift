@@ -18,11 +18,11 @@ final class View: UIView {
     }()
     
     // MARK: - Inicializador
-    init(dataSource: UITableViewDataSource, frame: CGRect = .zero) {
+    override init(frame: CGRect = .zero) {
         super.init(frame: frame)
-        tableView.dataSource = dataSource
         configureView()
     }
+    
     //Obrigatorio Isso mas podemos Desabilitar Chamada
     @available(*, unavailable)
     required init?(coder: NSCoder) {
@@ -52,6 +52,6 @@ final class View: UIView {
     //Constraints da Table View
     private func constrainTableView() {
         //Preenche Tudo
-        tableView
+        tableView.fillSuperview()
     }
 }
