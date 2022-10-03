@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "filename" : "ALFABETO-LIBRAS-PARA-IMPRIMIR-GRÁTIS.png",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
     }
   ],
   "info" : {

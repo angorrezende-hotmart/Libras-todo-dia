@@ -25,7 +25,10 @@ class ViewController: UIViewController {
     override func loadView() {
         // Aqui nao tem super
         // Crio Minha Custom View
+        
+        //Clientes
         view = View(dataSource: self)// Self = eu mesmo = ViewController
+    
     }
 }
 //A Propria View Controller Vai ser Data Source

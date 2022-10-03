@@ -14,7 +14,7 @@ struct Letter {
     
     init(value: String) {
         self.value = value
-        self.image = "Letter-" + value
+        self.image = value
     }
 }
 

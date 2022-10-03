@@ -18,10 +18,13 @@ final class View: UIView {
     }()
     
     // MARK: - Inicializador
-    override init(frame: CGRect = .zero) {
+    //Vendedor
+    init(dataSource: UITableViewDataSource,  frame: CGRect = .zero) {
         super.init(frame: frame)
         configureView()
+        tableView.dataSource = dataSource
     }
+    
     
     //Obrigatorio Isso mas podemos Desabilitar Chamada
     @available(*, unavailable)
