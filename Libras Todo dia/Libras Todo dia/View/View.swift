@@ -18,7 +18,7 @@ final class View: UIView {
     }()
     
     // MARK: - Inicializador
-    //Vendedor
+    // VENDEDOR
     init(dataSource: UITableViewDataSource,  frame: CGRect = .zero) {
         super.init(frame: frame)
         configureView()

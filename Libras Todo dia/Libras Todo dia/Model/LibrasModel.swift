@@ -29,6 +29,7 @@ struct Alphabet {
             Letter(value: "A"),
             Letter(value: "B"),
             Letter(value: "C"),
+            Letter(value: "Ç."),
             Letter(value: "D"),
             Letter(value: "E"),
             Letter(value: "F"),
