@@ -27,10 +27,25 @@ class ViewController: UIViewController {
         // Crio Minha Custom View
         
         //Clientes
-        view = View(dataSource: self)// Self = eu mesmo = ViewController
-    
+        view = View(dataSource: self, delegate: self)// Self = eu mesmo = ViewController
+        
+        
     }
 }
+// MARK: TABLE VIEW DELEGATE
+// Aumentar celula
+extension ViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100 // Tamanho celula
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Clicar o Botao") // clicar o botao
+    }
+}
+
+
+
+// MARK: Table View Data Source
 //A Propria View Controller Vai ser Data Source
 extension ViewController: UITableViewDataSource {
     
@@ -44,6 +59,8 @@ extension ViewController: UITableViewDataSource {
     }
     //Celula de cada linha, Mas primeiro preciso Registrar Celula
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         //AQUI eu peço a TableView pra Devolver celula
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
                 as? LetterTableViewCell else {
@@ -62,6 +79,7 @@ extension ViewController: UITableViewDataSource {
         cell.letterImageView.image = UIImage(named: letter.image)
         cell.titleLabel.text = letter.value
         
+        
         //Memoria
         return cell
     }
@@ -77,4 +95,4 @@ extension ViewController: UITableViewDataSource {
  (4) TableView com DataSource = ok
  (5) Imagem na Cell
  
-*/
+ */

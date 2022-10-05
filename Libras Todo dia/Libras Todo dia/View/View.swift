@@ -19,10 +19,11 @@ final class View: UIView {
     
     // MARK: - Inicializador
     // VENDEDOR
-    init(dataSource: UITableViewDataSource,  frame: CGRect = .zero) {
+    init(dataSource: UITableViewDataSource, delegate: UITableViewDelegate, frame: CGRect = .zero) {
         super.init(frame: frame)
         configureView()
         tableView.dataSource = dataSource
+        tableView.delegate = delegate
     }
     
     
