@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     private let model = Alphabet()
     
+    
     //View Especifica, Minha View, do meu Jeito
     private var customView: View? {
         view as? View
@@ -20,17 +21,24 @@ class ViewController: UIViewController {
     // Mark: View Life-Cyle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+        
     }
     
     override func loadView() {
+        
         // Aqui nao tem super
         // Crio Minha Custom View
         
         //Clientes
         view = View(dataSource: self, delegate: self)// Self = eu mesmo = ViewController
         
-        
     }
+    
+    func setupView() {
+            title = "Letras"
+    }
+    
 }
 // MARK: TABLE VIEW DELEGATE
 // Aumentar celula
@@ -39,8 +47,18 @@ extension ViewController : UITableViewDelegate {
         return 100 // Tamanho celula
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Clicar o Botao") // clicar o botao
+        let DetailViewController = DetailViewController()
+        self.navigationController?.pushViewController(DetailViewController, animated: true)
+    
+        
+        let index = indexPath.row
+        let letter = model.letters[index]
+        DetailViewController.letter = letter
+        
+        
+    
     }
+    
 }
 
 
