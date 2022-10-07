@@ -9,18 +9,13 @@ import UIKit
 
 class DetailViewController: UIViewController {
     var letter: Letter!
-    let img = ["aviao","barco"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(letter.value)
         
         view.backgroundColor = .white
-
+        
     }
-
-    
 }
-
-
-
