@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Captura de Tela 2022-10-06 às 15.40.05.png",
-      "idiom" : "universal"
+      "filename" : "Captura de Tela 2022-10-08 às 08.38.20.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
