@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     }
     
     func setupView() {
-            title = "ALPHABET"
+            title = "ALFABETO"
         
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blue]
         

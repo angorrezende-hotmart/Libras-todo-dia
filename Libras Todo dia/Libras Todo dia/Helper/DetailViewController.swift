@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     
     let ImageView: UIImageView = {
         let theImageView = UIImageView()
-        theImageView.image = UIImage(named: "airplane")
+        theImageView.image = UIImage(named: "aviao")
         theImageView.translatesAutoresizingMaskIntoConstraints = false
         return theImageView
         //Você precisa chamar esta propriedade para que a imagem seja adicionada à sua visualização
@@ -60,7 +60,7 @@ class DetailViewController: UIViewController {
     private func setupUI() {
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        title = "LETTER"
+        title = "LETRA"
         
         // Configuração inicial da imagem para o estado Large NavBar, a tela sempre tem Large NavBar quando é aberta.
         guard let navigationBar = self.navigationController?.navigationBar else { return }
