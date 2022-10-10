@@ -44,7 +44,7 @@ final class LetterTableViewCell: UITableViewCell {
         contentView.layer.shadowRadius = 25.0
         contentView.layer.shadowOpacity = 9.0
         contentView.layer.borderWidth = 1
-        contentView.layer.cornerRadius = 10
+        contentView.layer.cornerRadius = 20
         contentView.layer.borderColor = UIColor(red: 1, green: 1, blue: 1, alpha: 2).cgColor
         
     }

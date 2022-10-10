@@ -36,15 +36,19 @@ class ViewController: UIViewController {
     }
     
     func setupView() {
-            title = "Letras"
+            title = "ALPHABET"
+        
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blue]
+        
     }
+    
     
 }
 // MARK: TABLE VIEW DELEGATE
 // Aumentar celula
 extension ViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80 // Tamanho celula
+        return 100 // Tamanho celula
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let DetailViewController = DetailViewController()
