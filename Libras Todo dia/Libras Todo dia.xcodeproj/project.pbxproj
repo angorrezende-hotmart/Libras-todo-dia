@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		51A17BB028B6BDA5008BBE43 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A17BAF28B6BDA5008BBE43 /* UIView+Autolayout.swift */; };
+		992F70BD28F5AA3E00977DDC /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F70BC28F5AA3E00977DDC /* Photos.swift */; };
 		99B3127228B6A219000396DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3127128B6A219000396DC /* AppDelegate.swift */; };
 		99B3127428B6A219000396DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3127328B6A219000396DC /* SceneDelegate.swift */; };
 		99B3127628B6A219000396DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3127528B6A219000396DC /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		51A17BAF28B6BDA5008BBE43 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
+		992F70BC28F5AA3E00977DDC /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		99B3126E28B6A219000396DC /* Libras Todo dia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Libras Todo dia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B3127128B6A219000396DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99B3127328B6A219000396DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				99E92F3328C234E300DC6003 /* LibrasModel.swift */,
+				992F70BC28F5AA3E00977DDC /* Photos.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992F70BD28F5AA3E00977DDC /* Photos.swift in Sources */,
 				99E92F3428C234E300DC6003 /* LibrasModel.swift in Sources */,
 				99E92F3128C22B8C00DC6003 /* View.swift in Sources */,
 				99B3127628B6A219000396DC /* ViewController.swift in Sources */,

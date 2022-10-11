@@ -9,6 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     var letter: Letter!
+    var photos = [Photos]()
     
     let ImageView: UIImageView = {
         let theImageView = UIImageView()
@@ -16,8 +17,6 @@ class DetailViewController: UIViewController {
         theImageView.translatesAutoresizingMaskIntoConstraints = false
         return theImageView
         //Você precisa chamar esta propriedade para que a imagem seja adicionada à sua visualização
-
-
     }()
     
     
@@ -25,14 +24,18 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         print(letter.value)
         view.backgroundColor = .systemGray4
-        view.addSubview(imageView)//Isso adiciona o controlador de visualização sem restrições
+        view.addSubview(ImageView) //Isso adiciona o controlador de visualização sem restrições
         ImageViewConstraints() //Esta função está fora da função viewDidLoad que controla as restrições
         setupUI()
-        
+        let A = Photos(name: "A", letra: "aviao")
+        photos.append(A)
+        let B = Photos(name: "B", letra: "beber")
+        photos.append(B)
+        let C = Photos(name: "C", letra: "caber")
+        photos.append(C)
         
     }
-    
-//     Não se esqueça do .isActive = true após cada restrição
+    // Não se esqueça do .isActive = true após cada restrição
     func ImageViewConstraints() {
         ImageView.widthAnchor.constraint(equalToConstant: 370).isActive = true
         ImageView.heightAnchor.constraint(equalToConstant: 280).isActive = true
@@ -40,7 +43,7 @@ class DetailViewController: UIViewController {
         ImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 50).isActive = true
         ImageView.layer.cornerRadius = 40
         ImageView.layer.masksToBounds = true
-
+        
     }
     private let imageView = UIImageView(image: UIImage(named: "Libras"))
     
@@ -80,3 +83,4 @@ class DetailViewController: UIViewController {
     }
     
 }
+
