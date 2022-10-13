@@ -17,3 +17,18 @@ class Photos {
         image = UIImage(named: self.name)!
     }
 }
+
+
+struct Alphabets {
+    let lettersPhotos: [Photos]
+    
+    init() {
+        lettersPhotos = [
+        Photos(name: "aviao"),
+        Photos(name: "beber"),
+        Photos(name: "caber"),
+        Photos(name: "dirigir")
+        
+        ]
+    }
+}

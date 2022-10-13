@@ -25,9 +25,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         print(letter.value)
         view.backgroundColor = .systemGray4
-        view.addSubview(imageView)//Isso adiciona o controlador de visualização sem restrições
+        view.addSubview(ImageView)//Isso adiciona o controlador de visualização sem restrições
         ImageViewConstraints() //Esta função está fora da função viewDidLoad que controla as restrições
         setupUI()
+        
+        
         
         
     }
@@ -63,20 +65,19 @@ class DetailViewController: UIViewController {
     private func setupUI() {
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        title = "LETRA"
-        
-        // Configuração inicial da imagem para o estado Large NavBar, a tela sempre tem Large NavBar quando é aberta.
-        guard let navigationBar = self.navigationController?.navigationBar else { return }
-        navigationBar.addSubview(imageView)
-        imageView.layer.cornerRadius = Const.ImageSizeForLargeState / 2
-        imageView.clipsToBounds = true
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            imageView.rightAnchor.constraint(equalTo: navigationBar.rightAnchor, constant: -Const.ImageRightMargin),
-            imageView.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -Const.ImageBottomMarginForLargeState),
-            imageView.heightAnchor.constraint(equalToConstant: Const.ImageSizeForLargeState),
-            imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor)
-        ])
+        title = "LETRA" + " " + letter.value
+//
+//        // configurar imagem
+//        if letter.value == "B" {
+//            ImageView.image = UIImage(named: "beber")
+//        } else if letter.value == "C" {
+//            ImageView.image = UIImage(named: "caber")
+//
+//        } else if letter.value == "D" {
+//            ImageView.image = UIImage(named: "dirigir")
+//        }
+        ImageView.image = UIImage(named: "img-exemplo-" + letter.value.lowercased())
+       
     }
     
 }
