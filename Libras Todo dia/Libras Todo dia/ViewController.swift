@@ -58,14 +58,10 @@ extension ViewController : UITableViewDelegate {
         let index = indexPath.row
         let letter = model.letters[index]
         DetailViewController.letter = letter
-        
-        
     
     }
     
 }
-
-
 
 // MARK: Table View Data Source
 //A Propria View Controller Vai ser Data Source
@@ -100,9 +96,6 @@ extension ViewController: UITableViewDataSource {
         cell.backgroundColor = .lightGray
         cell.letterImageView.image = UIImage(named: letter.image)
         cell.titleLabel.text = letter.value
-        
-        
-        
         
         //Memoria
         return cell

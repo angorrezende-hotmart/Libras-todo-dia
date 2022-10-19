@@ -20,7 +20,6 @@ class DetailViewController: UIViewController {
 
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(letter.value)
@@ -28,9 +27,6 @@ class DetailViewController: UIViewController {
         view.addSubview(ImageView)//Isso adiciona o controlador de visualização sem restrições
         ImageViewConstraints() //Esta função está fora da função viewDidLoad que controla as restrições
         setupUI()
-        
-        
-        
         
     }
     
@@ -44,28 +40,14 @@ class DetailViewController: UIViewController {
         ImageView.layer.masksToBounds = true
 
     }
-    private let imageView = UIImageView(image: UIImage(named: "Libras"))
-    
-    private struct Const {
-        // Altura/largura da imagem para o estado Large NavBar
-        static let ImageSizeForLargeState: CGFloat = 40
-        // Margem da âncora direita da área segura até a âncora direita da imagem
-        static let ImageRightMargin: CGFloat = 20
-        // Margem da âncora inferior da NavBar até a âncora inferior da imagem para o estado Large NavBar
-        static let ImageBottomMarginForLargeState: CGFloat = 12
-        // Margem da âncora inferior da NavBar até a âncora inferior da imagem para o estado Small NavBar
-        static let ImageBottomMarginForSmallState: CGFloat = 6
-        // Altura/largura da imagem para o estado Small NavBar
-        static let ImageSizeForSmallState: CGFloat = 32
-        // Altura de NavBar para estado pequeno. Normalmente são apenas 44
-        static let NavBarHeightSmallState: CGFloat = 44
-        // Altura de NavBar para estado grande.
-        static let NavBarHeightLargeState: CGFloat = 96.5
-    }
+   
     private func setupUI() {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         title = "LETRA" + " " + letter.value
+        
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.red]
+        
 //
 //        // configurar imagem
 //        if letter.value == "B" {
@@ -76,6 +58,8 @@ class DetailViewController: UIViewController {
 //        } else if letter.value == "D" {
 //            ImageView.image = UIImage(named: "dirigir")
 //        }
+        // OU ESTE
+        
         ImageView.image = UIImage(named: "img-exemplo-" + letter.value.lowercased())
        
     }
