@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "hotmart_logo_dark_symbol.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

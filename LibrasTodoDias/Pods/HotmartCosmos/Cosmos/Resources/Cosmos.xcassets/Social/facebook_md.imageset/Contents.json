@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "facebook_md.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

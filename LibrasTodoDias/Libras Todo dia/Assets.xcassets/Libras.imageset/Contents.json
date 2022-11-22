@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "libras-laranja.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

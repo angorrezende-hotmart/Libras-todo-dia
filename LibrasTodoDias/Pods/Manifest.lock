@@ -1,0 +1,20 @@
+PODS:
+  - CosmosTokens (0.0.10)
+  - HotmartCosmos (1.2.12):
+    - CosmosTokens (= 0.0.10)
+
+DEPENDENCIES:
+  - HotmartCosmos
+
+SPEC REPOS:
+  https://github.com/Hotmart-Org/podspec-repository:
+    - CosmosTokens
+    - HotmartCosmos
+
+SPEC CHECKSUMS:
+  CosmosTokens: 7db90a52839bf042098957c3d02436ea87d54fc0
+  HotmartCosmos: ee430da1bf4b15a92b1fde226311f205205446dc
+
+PODFILE CHECKSUM: dc29666b0e91e340ff95ef0dc7457c3437dd6f50
+
+COCOAPODS: 1.11.3

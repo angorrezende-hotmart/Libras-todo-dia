@@ -1,0 +1,6 @@
+framework module Pods_Libras_Todo_dia {
+  umbrella header "Pods-Libras Todo dia-umbrella.h"
+
+  export *
+  module * { export * }
+}

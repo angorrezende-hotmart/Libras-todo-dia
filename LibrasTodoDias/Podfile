@@ -1,0 +1,15 @@
+platform :ios, '12.0'
+
+load '../../Sources.rb'
+
+source 'https://github.com/cocoaPods/specs'
+hotmart_sources
+
+inhibit_all_warnings! #esconder warnings
+
+use_frameworks!
+use_modular_headers!
+
+target 'Libras Todo dia' do
+  pod 'HotmartCosmos'
+end

@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "hotmart_logo_secondary_dark.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

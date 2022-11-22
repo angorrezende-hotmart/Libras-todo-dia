@@ -1,0 +1,6 @@
+framework module CosmosTokens {
+  umbrella header "CosmosTokens-umbrella.h"
+
+  export *
+  module * { export * }
+}
